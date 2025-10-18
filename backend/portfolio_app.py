@@ -196,11 +196,24 @@ st.markdown("""
     
     /* Section Titles */
     .section-title {
-        font-size: 2.5rem;
-        font-weight: 800;
+        font-size: 3rem;
+        font-weight: 900;
         color: #0f172a;
         text-align: center;
         margin: 60px 0 40px 0;
+        position: relative;
+        display: inline-block;
+        width: 100%;
+    }
+    
+    .section-title::after {
+        content: '';
+        display: block;
+        width: 100px;
+        height: 5px;
+        background: linear-gradient(90deg, #10b981 0%, #059669 100%);
+        margin: 15px auto 0;
+        border-radius: 3px;
     }
     
     /* Experience Cards */
