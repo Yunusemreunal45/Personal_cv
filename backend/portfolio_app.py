@@ -486,7 +486,7 @@ personal_info = {
     'phone': '(+90) 553 798 8488',
     'email': 'yunusemreu623@gmail.com',
     'linkedin': 'https://www.linkedin.com/in/yunus-emre-ünal-aab175263/',
-    'github': 'https://github.com/yunusemreunal',
+    'github': 'https://github.com/Yunusemreunal45',
     'website': 'https://cerulean-travesseiro-a187f3.netlify.app',
     'cv_url': 'https://customer-assets.emergentagent.com/job_6cd547df-b864-4d07-b910-1fd41bea082b/artifacts/fqt0nfav_Yunus_Emre_%C3%9Cnal_cv.pdf'
 }
