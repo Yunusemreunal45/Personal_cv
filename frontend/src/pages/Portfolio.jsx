@@ -96,7 +96,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white scroll-smooth">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-slate-50 via-white to-emerald-50 pt-20 pb-32 px-6">
         <div className="max-w-6xl mx-auto">
