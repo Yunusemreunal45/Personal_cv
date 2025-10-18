@@ -510,13 +510,26 @@ featured_projects = [
 # HERO SECTION
 st.markdown(f"""
 <div class="hero-section">
-    <div style="text-align: center;">
-        <div style="width: 150px; height: 150px; margin: 0 auto 30px auto; background: linear-gradient(135deg, #cbd5e1 0%, #d1fae5 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 5px solid white; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
-            <span style="font-size: 4rem; font-weight: 800; color: #334155;">YEÜ</span>
+    <div style="text-align: center; position: relative; z-index: 2;">
+        <div class="profile-avatar">
+            <span class="avatar-text">YEÜ</span>
         </div>
         <h1 class="hero-title">{personal_info['name']}</h1>
         <p class="hero-subtitle">{personal_info['title']}</p>
-        <p class="hero-contact">📍 {personal_info['location']} | ✉️ {personal_info['email']}</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 20px;">
+            <span class="hero-contact">
+                <span class="contact-icon">📍</span>
+                {personal_info['location']}
+            </span>
+            <span class="hero-contact">
+                <span class="contact-icon">✉️</span>
+                {personal_info['email']}
+            </span>
+            <span class="hero-contact">
+                <span class="contact-icon">📱</span>
+                {personal_info['phone']}
+            </span>
+        </div>
     </div>
 </div>
 """, unsafe_allow_html=True)
