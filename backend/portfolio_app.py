@@ -370,38 +370,61 @@ st.markdown("""
     
     /* Buttons */
     .stButton > button {
-        background: #10b981;
+        background: linear-gradient(135deg, #10b981 0%, #059669 100%);
         color: white;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 1.1rem;
-        padding: 12px 30px;
-        border-radius: 10px;
+        padding: 16px 35px;
+        border-radius: 15px;
         border: none;
         transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .stButton > button::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+        transition: left 0.5s;
+    }
+    
+    .stButton > button:hover::before {
+        left: 100%;
     }
     
     .stButton > button:hover {
-        background: #059669;
-        transform: translateY(-2px);
-        box-shadow: 0 8px 16px rgba(16, 185, 129, 0.3);
+        background: linear-gradient(135deg, #059669 0%, #047857 100%);
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px rgba(16, 185, 129, 0.4);
     }
     
-    /* Download Button */
-    .stDownloadButton > button {
-        background: #10b981;
-        color: white;
-        font-weight: 600;
-        font-size: 1.1rem;
-        padding: 12px 30px;
-        border-radius: 10px;
+    /* Link Buttons */
+    a.stButton, a[data-testid="stLinkButton"] {
+        text-decoration: none !important;
+    }
+    
+    a.stButton > button, a[data-testid="stLinkButton"] > button {
+        background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        color: white !important;
+        font-weight: 700;
+        font-size: 1.05rem;
+        padding: 14px 32px;
+        border-radius: 12px;
         border: none;
         transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
     }
     
-    .stDownloadButton > button:hover {
-        background: #059669;
-        transform: translateY(-2px);
-        box-shadow: 0 8px 16px rgba(16, 185, 129, 0.3);
+    a.stButton > button:hover, a[data-testid="stLinkButton"] > button:hover {
+        background: linear-gradient(135deg, #059669 0%, #047857 100%);
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px rgba(16, 185, 129, 0.4);
     }
     
     /* Footer */
