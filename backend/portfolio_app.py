@@ -482,7 +482,7 @@ st.markdown("""
 personal_info = {
     'name': 'Yunus Emre Ünal',
     'title': 'Full-Stack Developer & AI Enthusiast',
-    'location': 'Manisa, Turkey',
+    'location': 'Konya, Turkey',
     'phone': '(+90) 553 798 8488',
     'email': 'yunusemreu623@gmail.com',
     'linkedin': 'https://www.linkedin.com/in/yunus-emre-ünal-aab175263/',
